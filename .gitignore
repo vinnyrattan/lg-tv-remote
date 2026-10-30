@@ -1,0 +1,17 @@
+# Local credentials, device records, logs and captures
+*.settings.json
+settings.json
+*pairing*.json
+.env
+.env.*
+*.key
+*.pem
+*.pfx
+*.p12
+*.log
+*.png
+*.jpg
+*.jpeg
+*.zip
+work/
+.vscode/
