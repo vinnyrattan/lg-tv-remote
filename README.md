@@ -141,12 +141,3 @@ The GUI does not save its request log automatically. However, replies can contai
 
 The GUI waits for a reply during a request and temporarily disables action buttons. After a timeout, reconnect before retrying. Compatibility has not been verified across the full LG TV range.
 
-## Publishing and contributing safely
-
-Publish only the source and documentation in this repository. Do not include old working folders, pairing JSON, local settings, screenshots, logs, or device inventories. The included `.gitignore` provides defense in depth; it does not remove files already committed or protect files uploaded manually through GitHub's website.
-
-Inspect staged changes before every commit. Do not assume GitHub secret scanning recognizes LG pairing keys. Use a GitHub-provided no-reply commit email if you do not want your personal email in public commit metadata.
-
-If a key is published, revoke the affected TV authorization where supported and pair again, then clean the Git history as necessary. Deleting the file in a later commit does not erase earlier copies. See [GitHub's sensitive-data removal guidance](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository).
-
-When reporting an issue, include Windows/PowerShell versions, the endpoint, and a redacted error. Avoid raw logs and screenshots containing your TV address, serial number, pairing key, username, or account details.
